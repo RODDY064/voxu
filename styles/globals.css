@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-theme: #F5F2FF;
+
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-theme);
+
+}
+
+body::-webkit-scrollbar {
+  background: #F5F2FF;
+}
+
+
+body::-webkit-scrollbar-thumb{
+  background: #000;
+  border-radius: 20px;
+  
+}
+
+#range{
+  appearance: none;
+  height: 2px;
+  background: #000;
+
+}
+
+#range::-webkit-slider-thumb{
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #ffff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #000;
+
+}
+
+#shadow {
+  background: linear-gradient(to right, transparent 20%, #fffefe4c 80%);
+}
+
+#card_1 {
+  background:  rgba(254, 254, 255, 0.326);
+}
+
+#card_3{
+  background: linear-gradient(to right, rgba(254, 254, 255, 0.326), transparent);
+}
+#card_5{
+  background: linear-gradient(to bottom, rgba(254, 254, 255, 0.326), transparent);
+}
+#card_6{
+  background: linear-gradient(to left, rgba(254, 254, 255, 0.326), transparent);
+}
+/*
+  background: #ece8e84c;
+*/
+
+#shadow_card{
+box-shadow: -4px 5px 32px 13px rgba(0,0,0,0.14);;
+}
+.home{
+  @apply bg-cream backdrop-blur-xs
+} 
+.box{
+  @apply bg-glass backdrop-blur-gl shadow-sm
+}
