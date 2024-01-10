@@ -50,8 +50,8 @@ export default function TailChase() {
           <div
            key={userCustomize.color}
            style={{
-            width:`${userCustomize.size * 0.25}px`,
-            height:`${userCustomize.size * 0.25}px`,
+            width:pathName === '/' ? `${40 * 0.25}px` : `${userCustomize.size *0.25}px`,
+            height:pathName === '/' ? `${40 * 0.25}px` : `${userCustomize.size *0.25}px`,
             background: pathName === '/' ? '#000' : userCustomize.color,
            }}
            className='w-[0.7rem] h-[0.7rem] rounded-full'></div>

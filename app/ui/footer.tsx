@@ -23,8 +23,8 @@ const Contacts: Array<{ icons: string; name: string; item?: string }> = [
 
 export default function Footer() {
   return (
-    <div className="w-full min-h-screen p-5 pt-24">
-      <div className="w-full flex justify-center">
+    <div className="w-full min-h-screen p-5 pt-24" id="footer">
+      <div className="w-full flex justify-center" >
         <div
           className="w-[100%] md:w-[90%] min-h-[32rem] max-sm:min-h-[35rem] rounded-[25px] relative flex max-sm:flex-col md:justify-between p-5 overflow-hidden"
           id="shadow">

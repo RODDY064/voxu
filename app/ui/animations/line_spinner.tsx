@@ -18,14 +18,19 @@ export default function LineSpinner() {
 
 
   return (
-    <div className="w-full h-full flex items-center justify-center">
-     <div key={timeDuration} className='w-[40px] h-[40px] flex items-center justify-start relative'>
+    <div key={userCustomize.size} className="w-full h-full flex items-center justify-center">
+     <div key={timeDuration}
+       style={{
+        width:pathName === '/' ? '40px' : `${userCustomize.size}px`,
+        height:pathName === '/' ? '40px' : `${userCustomize.size}px`
+       }}
+      className='w-[40px] h-[40px] flex items-center justify-start relative'>
        {[1,2,3,4,5,6,7,8,9,10,11,12].map((item)=>(
         <motion.div
          style={{
           rotate:`${(360/-12)*item}deg`
          }}
-        key={item} className='absolute top-0 w-[4px] h-[100%] left-[50%] rounded-2xl'>
+        key={item} className='absolute top-0 w-[10%] h-[100%] left-[50%] rounded-2xl'>
           <motion.div
            key={userCustomize.color}
            animate={{
