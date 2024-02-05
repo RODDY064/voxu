@@ -11,7 +11,7 @@ export default function Home() {
     <main className="w-full min-h-screen home">
       <div className="w-full h-screen flex items-center justify-center pt-12">
         <div className="w-[90%] h-[30rem]  box rounded-[16px] border border-teal-400/20 p-3 md:p-8 pt-12  md:pt-[8rem] flex max-sm:flex-col justify-between">
-         <div className="md:w-[60%] w-[100%]">
+         <div className="md:w-[60%] lg:w-[50%] w-[100%]">
          <h1 className={`${bree.className} md:text-xl font-[800]`}>
             Welcome to a world of seamless interactions and stunning visuals.{" "}
              Explore our collection of
@@ -24,7 +24,7 @@ export default function Home() {
             color="bg-gradient-to-r from-pink-400 via-white to-teal-400  bg-clip-text text-transparent" />
           </div>
          </div>
-         <div className="md:w-[40%] w-[100%]  max-sm:hidden ">
+         <div className="md:w-[40%] lg:w-[50%] w-[100%]  max-sm:hidden ">
           <AnimateBox />
          </div>
         </div>

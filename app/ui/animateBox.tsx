@@ -7,8 +7,8 @@ export default function AnimateBox() {
     <div className="w-full h-full  flex items-center justify-center rotate-12  p-4 relative">
       <div
         id="card_1"
-        className="absolute w-[50%] h-[8rem] md:h-[13rem] rounded-[35px] bg-box translate-y-[-5rem] translate-x-[-2rem] flex items-center justify-center">
-        <div className="w-[70px] h-[70px] flex items-center justify-start relative">
+        className="absolute w-[13rem] lg:w-[15rem h-[8rem] md:h-[13rem] rounded-[35px] bg-box translate-y-[-5rem] translate-x-[-2rem] flex items-center justify-center">
+        <div className="w-[70px] h-[70px]  flex flex-none items-center justify-start relative">
          <motion.div 
      animate={{rotate:[0,360]}}
      transition={{
